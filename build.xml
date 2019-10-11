@@ -267,7 +267,7 @@
                 <isset property="outputdir" />
             </condition>
             <fail message="inputdir is not set." unless="inputdir.set" />
-            <fail message="outputdir is not set." unless="inputdir.set" />
+            <fail message="outputdir is not set." unless="outputdir.set" />
             
             <mkdir dir="${outputdir}" />
             <antcall target="run-virgo-goals" />
